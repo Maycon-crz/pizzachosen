@@ -1,6 +1,7 @@
-$(document).ready(function(){
-    roleta();    
+$(document).ready(function(){    
+    roleta();
     rodar();
+    mostraopcoes();
 });
 var iniciarRoleta =0;
 function roleta(){
@@ -11,53 +12,68 @@ function roleta(){
     });
 }
 var conta = 0;
-//      90deg = calabresa
-//     135deg = mussarela
-//     180deg = brocolis
-//     225deg = mafiosa
-//     270deg = basca
-//     315deg = escarola
-//     360deg = alho_e_oleo
-//     410deg = margherita
-//     450deg = calabresa-fim
 function rodar(){
-    if(iniciarRoleta==1){        
-        setInterval(function(){
+    var sabor="";    
+    $(document).on('click', "#pararRoleta", function(){  
+        clearInterval(estarodando);
+        if(sabor !=""){
+            alert(sabor);
+            sabor="";
+        }        
+    });
+    if(iniciarRoleta==1){  
+        var estarodando = setInterval(function(){
             switch(conta){
                 case 0:
                     $("#ponteiro").css("transform", "rotate(90deg)");
-                    conta++;
-                break;
-                case 1:
+                    conta++; sabor = "calabresa";
+                break; case 1:
                     $("#ponteiro").css("transform", "rotate(135deg)");
-                     conta++;
-                break;
-                case 2:
+                     conta++; sabor = "mussarela";
+                break; case 2:
                     $("#ponteiro").css("transform", "rotate(180deg)");
-                     conta++;
-                break;
-                case 3:
+                     conta++; sabor = "brocolis";
+                break; case 3:
                     $("#ponteiro").css("transform", "rotate(225deg)");
-                     conta++;
-                break;
-                case 4:
+                     conta++; sabor = "mafiosa";
+                break; case 4:
                     $("#ponteiro").css("transform", "rotate(270deg)");
-                     conta++;
-                break;
-                case 5:
+                     conta++; sabor = "basca";
+                break; case 5:
                     $("#ponteiro").css("transform", "rotate(315deg)");
-                     conta++;
-                break;
-                case 6:
+                     conta++; sabor = "escarola";
+                break; case 6:
                     $("#ponteiro").css("transform", "rotate(360deg)");
-                     conta++;
-                break;
-                case 7:
+                     conta++; sabor = "alho_e_oleo";
+                break; case 7:
                     $("#ponteiro").css("transform", "rotate(410deg)");
-                    conta=0;
+                    conta=0; sabor = "margherita";
                 break;
-            }                
-            // alert(conta);
+            }          
         }, 80);  
     }    
+}
+var cr = 0;
+function mostraopcoes(){
+    $(document).on('click', "#btmostraroleta", function(){
+        if(cr == 1){
+            $("#linhadeopcoes").html("");
+            cr = 0;
+        }else{
+            var opcaoRoleta = "<div class='col-3 text-center'>&nbsp;</div>"+
+            "<div class='col-6 text-center rounded-circle'>"+
+                "<img src='img/roletapizza.png' class='rounded-circle mt-1' id='roleta'>"+
+                "<div id='ponteiro'><<--[]</div>"+
+            "</div>"+
+            "<div class='col-3 text-center'>"+
+                "<ul>"+
+                    "<li><button type='button' class='btn btn-danger rounded-circle mt-5 pt-5 pb-5' id='rodarRoleta'>Rodar</button></li>"+
+                    "<li><button type='button' class='btn btn-warning rounded-circle mt-5 pt-5 pb-5' id='pararRoleta'>Parar</button></li>"+
+                "</ul>"+
+            "</div>";
+            $("#linhadeopcoes").html(opcaoRoleta);
+            cr=1;  
+        }
+              
+    });
 }

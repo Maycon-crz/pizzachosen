@@ -1,3 +1,6 @@
+ul{
+    list-style: none;
+}
 #roleta{
     transform: rotate(50grad);
     width: 100%;
