@@ -1,14 +1,36 @@
 #roleta{
     transform: rotate(50grad);
+    width: 100%;
+    height: 100%;
+}
+.btsescolha{
+    width:100%;
+    height:150px;
+    color:white;
+    font-size: x-large;
 }
 #ponteiro{
     position:absolute;
     top:45% !important;    
     left:31%;
     width:35%;
-    height: 55px;
+    height: 40px;
     background-color: rgba(26, 199, 10, 0.8);  
-    transform: rotate(138deg);
+    transform: rotate(410deg);
     border-radius: 60px;
-    text-align: center;    
+    text-align: center !important;    
+    font-size: x-large !important;
+    color:red;
 }
+
+/* 
+    90deg = calabresa
+    135deg = mussarela
+    180deg = brocolis
+    225deg = mafiosa
+    270deg = basca
+    315deg = escarola
+    360deg = alho_e_oleo
+    410deg = margherita
+    450deg = calabresa-fim
+*/
