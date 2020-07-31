@@ -1,0 +1,14 @@
+#roleta{
+    transform: rotate(50grad);
+}
+#ponteiro{
+    position:absolute;
+    top:45% !important;    
+    left:31%;
+    width:35%;
+    height: 55px;
+    background-color: rgba(26, 199, 10, 0.8);  
+    transform: rotate(138deg);
+    border-radius: 60px;
+    text-align: center;    
+}
