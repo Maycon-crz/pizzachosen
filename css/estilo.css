@@ -1,7 +1,8 @@
 ul{
     list-style: none;
 }
-#mostrapizzarias{
+
+#mostrapizzarias, #pizzariasRoleta{
     display: none;
 }
 #mostrapizzarias img{

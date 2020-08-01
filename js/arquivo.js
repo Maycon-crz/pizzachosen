@@ -6,7 +6,8 @@ $(document).ready(function(){
 });
 function mostraPromocoaPizzarias(){
     $(document).on('click', ".btnMostraPromocao", function(){
-        alert("Pizzarias!");
+        $("#pizzariasRoleta").html("<h2>Parcerias de Pizzarias que estão com promoção dessa pizza ou só essa pizza vendem</h2>");
+        $("#pizzariasRoleta").toggle();
     });
 }
 function mostraPizza(sabor){
@@ -45,10 +46,8 @@ function mostraPizza(sabor){
             "</button>");
         break;
     }
-   
 }
-var iniciarRoleta=0;
-var bugrodar=0;
+var iniciarRoleta=0; var bugrodar=0;
 function roleta(){
     $(document).on('click', '#rodarRoleta', function(){
         if(bugrodar == 1){
@@ -131,6 +130,11 @@ function mostraopcoes(){
             "<div class='row bg-success pt-2'>"+
                 "<div class='col-12 text-center'>"+
                     "<div id='alertas'></div>"+
+                "</div>"+
+            "</div>"+
+            "<div class='row bg-success pt-2'>"+
+                "<div class='col-12 text-center'>"+
+                    "<div id='pizzariasRoleta'></div>"+
                 "</div>"+
             "</div>";
             $("#linhadeopcoes").html(opcaoRoleta);
