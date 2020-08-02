@@ -3,6 +3,6 @@
  
 Lista de Tarefas:
 **Criar**
--[]opção Palavras e frases
--[]opção Emojis
--[]Rodapé
+- []opção Palavras e frases
+- []opção Emojis
+- []Rodapé
