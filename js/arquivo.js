@@ -1,9 +1,20 @@
 $(document).ready(function(){  
+    mostraInputTextareaPlFr();
     mostraPromocoaPizzarias();
     roleta();
     rodar();
     mostraopcoes();
 });
+function mostraInputTextareaPlFr(){
+    $(document).on('click', '#btmostraInputPl', function(){
+        $(".btsinputPl").toggle();
+        $(".btstextareaPl").css("display", "none"); 
+    });
+    $(document).on('click', '#btmostraTxFr', function(){
+       $(".btstextareaPl").toggle();
+       $(".btsinputPl").css("display", "none"); 
+    });
+}
 function mostraPromocoaPizzarias(){
     $(document).on('click', ".btnMostraPromocao", function(){
         $("#pizzariasRoleta").html("<h2>Parcerias de Pizzarias que estão com promoção dessa pizza ou só essa pizza vendem</h2>");
@@ -106,37 +117,62 @@ function rodar(){
         }, 80);  
     }    
 }
-var cr = 0;
+var cr =0; var cr2=0;
 function mostraopcoes(){
+    $(document).on('click', "#btmostrapalavrasfrases", function(){
+        if(cr2 == 1){
+            $("#linhadeopcoes").html("");
+            cr2 = 0;
+        }else{
+            $("#linhadeopcoes").html(
+                "<div class='row bg-warning'>"+
+                    "<div class='col-12 text-center'>"+
+                        "<ul class='m-0 p-0'>"+
+                            "<li>"+
+                                "<button type='button' class='form-control  btn-lg btn-danger text-warning mt-3' id='btmostraInputPl'>##### PALAVRA #####</button>"+
+                                "<button type='button' class='form-control btn-lg btn-danger text-warning mt-1' id='btmostraTxFr'>## TEXTO OU FRASE ##</button>"+
+                            "</li>"+
+                            "<li class='btsinputPl'><input type='text' class='form-control bg-warning border border-danger text-center mt-5' id=''/></li>"+
+                            "<li class='btsinputPl'><button type='button' class='form-control btn-lg btn-outline-danger'>PIZZA!</button></li>"+
+                            "<li class='btstextareaPl'><textarea class='form-control bg-warning border border-danger text-center mt-5' id=''></textarea></li>"+
+                            "<li class='btstextareaPl'><button type='button' class='form-control btn-lg btn-outline-danger'>PIZZA!</button></li>"+
+                        "</ul>"+
+                    "</div>"+
+                "</div>"
+            );
+            cr2=1;
+        }
+    });
     $(document).on('click', "#btmostraroleta", function(){
         if(cr == 1){
             $("#linhadeopcoes").html("");
             cr = 0;
         }else{
             var opcaoRoleta =
-            "<div class='row bg-success pt-2 mb-0 pb-0'>"+
-                "<div class='col-8 text-center rounded-circle'>"+
-                    "<img src='img/roletapizza.png' class='rounded-circle mt-1' id='roleta'>"+
-                    "<div id='ponteiro'><<--[]</div>"+
+                "<div class='row bg-success pt-2 mb-0 pb-0'>"+
+                    "<div class='col-8 text-center rounded-circle'>"+
+                        "<img src='img/roletapizza.png' class='rounded-circle mt-1' id='roleta'>"+
+                        "<div id='ponteiro'><<--[]</div>"+
+                    "</div>"+
+                    "<div class='col-4 text-center'>"+
+                        "<ul>"+
+                            "<li><button type='button' class='btn btn-danger rounded-circle mt-5 pt-5 pb-5' id='rodarRoleta'>Rodar</button></li>"+                        
+                            "<li><button type='button' class='btn btn-warning rounded-circle mt-2 pt-5 pb-5' id='pararRoleta'>Parar</button></li>"+
+                            "<li><a href='#alertas'><button type='button' class='btn m-0 p-0' id='mostrapizzarias'><img src='img/seta-para-baixo.gif' class='m-0 p-0'/></button></a></li>"+               
+                        "</ul>"+
+                    "</div>"+                
                 "</div>"+
-                "<div class='col-4 text-center'>"+
-                    "<ul>"+
-                        "<li><button type='button' class='btn btn-danger rounded-circle mt-5 pt-5 pb-5' id='rodarRoleta'>Rodar</button></li>"+                        
-                        "<li><button type='button' class='btn btn-warning rounded-circle mt-2 pt-5 pb-5' id='pararRoleta'>Parar</button></li>"+
-                        "<li><a href='#alertas'><button type='button' class='btn m-0 p-0' id='mostrapizzarias'><img src='img/seta-para-baixo.gif' class='m-0 p-0'/></button></a></li>"+               
-                    "</ul>"+
-                "</div>"+                
-            "</div>"+
-            "<div class='row bg-success pt-2'>"+
-                "<div class='col-12 text-center'>"+
-                    "<div id='alertas'></div>"+
+                "<div class='row bg-success pt-2'>"+
+                    "<div class='col-12 text-center'>"+
+                        "<div id='alertas'></div>"+
+                    "</div>"+
                 "</div>"+
-            "</div>"+
-            "<div class='row bg-success pt-2'>"+
-                "<div class='col-12 text-center'>"+
-                    "<div id='pizzariasRoleta'></div>"+
-                "</div>"+
-            "</div>";
+                "<div class='row bg-success pt-2'>"+
+                    "<div class='col-12 text-center'>"+
+                        "<div id='pizzariasRoleta'></div>"+
+                    "</div>"+
+                "</div>"
+            ;
             $("#linhadeopcoes").html(opcaoRoleta);
             cr=1;  
         }

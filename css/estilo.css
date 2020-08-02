@@ -2,7 +2,7 @@ ul{
     list-style: none;
 }
 
-#mostrapizzarias, #pizzariasRoleta{
+#mostrapizzarias, #pizzariasRoleta, .btsinputPl, .btstextareaPl{
     display: none;
 }
 #mostrapizzarias img{
