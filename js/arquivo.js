@@ -32,60 +32,59 @@ function selecionapizza(inputpalavras){
         case 'h':
             return "<li>Pizza: calabresa</li>";
         break;
-        // case 'i':
-            // $("#linhaRetornoPalavraFrases").append("<li>Pizza: calabresa</li>");
-        // break;
-        // case 'j':
-        //     alert('j');
-        // break;
-        // case 'k':
-        //     alert('k');
-        // break;
-        // case 'l':
-        //     alert('l');
-        // break;
-        // case 'm':
-        //     alert('m');
-        // break;
-        // case 'n':
-        //     alert('n');
-        // break;
-        // case 'o':
-        //     alert('o');
-        // break;
-        // case 'p':
-        //     alert('p');
-        // break;
-        // case 'q':
-        //     alert('q');
-        // break;
-        // case 'r':
-        //     alert('r');
-        // break;
-        // case 's':
-        //     alert('s');
-        // break;
-        // case 't':
-        //     alert('t');
-        // break;
-        // case 'u':
-        //     alert('u');
-        // break;
-        // case 'v':
-        //     alert('v');
-        // case 'w':
-        //     alert('w');
-        // break;
-        // break;
-        // case 'x':
-        //     alert('x');
-        // break;
-        // case 'y':
-        //     alert('y');
-        // break;
-        // case 'z':
-        //     alert('z');
-        // break;
+        case 'i':
+            return "<li>Pizza: calabresa</li>";
+        break;
+        case 'j':
+            return "<li>Pizza: milho_com_bacon</li>";
+        break;
+        case 'k':
+            return "<li>Pizza: cinco_queijos</li>";            
+        break;
+        case 'l':
+            return "<li>Pizza: saborosa</li>";
+        break;
+        case 'm':
+            return "<li>Pizza: napolitana</li>";
+        break;
+        case 'n':
+            return "<li>Pizza: anchovas</li>";
+        break;
+        case 'o':
+            return "<li>Pizza: portuguesa</li>";
+        break;
+        case 'p':
+            return "<li>Pizza: vegetariana</li>";
+        break;
+        case 'q':
+            return "<li>Pizza: lombo_com_catupiry</li>";
+        break;
+        case 'r':
+            return "<li>Pizza: bianca</li>";
+        break;
+        case 's':
+            return "<li>Pizza: moda_da_casa</li>";
+        break;
+        case 't':
+            return "<li>Pizza: siciliana</li>";
+        break;
+        case 'u':
+            return "<li>Pizza: pepperoni</li>";
+        break;
+        case 'v':
+            return "<li>Pizza: chester_com_catupiry</li>";
+        case 'w':
+            return "<li>Pizza: tomates_secos_com_rucucula</li>";
+        break;
+        case 'x':
+            return "<li>Pizza: atum</li>";
+        break;
+        case 'y':
+            return "<li>Pizza: palmito</li>";
+        break;
+        case 'z':
+            return "<li>Pizza: frango_com_catupiry</li>";
+        break;
     }      
 }
 function validaInputTextareaPlFr(){
@@ -93,7 +92,7 @@ function validaInputTextareaPlFr(){
         var inputpalavras = $("#inputpalavras").val();
         $("#linhaRetornoPalavraFrases").html("<li>Palavra: "+inputpalavras+"</li>");
         if(inputpalavras != ""){
-            inputpalavras = inputpalavras.slice(1,2);
+            inputpalavras = inputpalavras.slice(0,1);
             var returnadapizza = selecionapizza(inputpalavras);
             $("#linhaRetornoPalavraFrases").append(returnadapizza);
         }
