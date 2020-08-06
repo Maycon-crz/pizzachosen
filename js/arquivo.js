@@ -1,10 +1,107 @@
 $(document).ready(function(){  
+    validaInputTextareaPlFr();
     mostraInputTextareaPlFr();
     mostraPromocoaPizzarias();
     roleta();
     rodar();
     mostraopcoes();
 });
+function selecionapizza(inputpalavras){
+    switch(inputpalavras){
+        case 'a':
+            return "<li>Pizza: mussarela</li>";
+        break;                
+        case 'b':
+            return "<li>Pizza: brocolis</li>";
+        break;
+        case 'c':
+            return "<li>Pizza: mafiosa</li>";
+        break;
+        case 'd':
+            return "<li>Pizza: basca</li>";
+        break;                       
+        case 'e':
+            return "<li>Pizza: escarola</li>";
+        break;
+        case 'f':
+            return "<li>Pizza: alho_e_oleo</li>";
+        break;
+        case 'g':
+            return "<li>Pizza: margherita</li>";
+        break;   
+        case 'h':
+            return "<li>Pizza: calabresa</li>";
+        break;
+        // case 'i':
+            // $("#linhaRetornoPalavraFrases").append("<li>Pizza: calabresa</li>");
+        // break;
+        // case 'j':
+        //     alert('j');
+        // break;
+        // case 'k':
+        //     alert('k');
+        // break;
+        // case 'l':
+        //     alert('l');
+        // break;
+        // case 'm':
+        //     alert('m');
+        // break;
+        // case 'n':
+        //     alert('n');
+        // break;
+        // case 'o':
+        //     alert('o');
+        // break;
+        // case 'p':
+        //     alert('p');
+        // break;
+        // case 'q':
+        //     alert('q');
+        // break;
+        // case 'r':
+        //     alert('r');
+        // break;
+        // case 's':
+        //     alert('s');
+        // break;
+        // case 't':
+        //     alert('t');
+        // break;
+        // case 'u':
+        //     alert('u');
+        // break;
+        // case 'v':
+        //     alert('v');
+        // case 'w':
+        //     alert('w');
+        // break;
+        // break;
+        // case 'x':
+        //     alert('x');
+        // break;
+        // case 'y':
+        //     alert('y');
+        // break;
+        // case 'z':
+        //     alert('z');
+        // break;
+    }      
+}
+function validaInputTextareaPlFr(){
+    $(document).on('click', '#btpalavras', function(){
+        var inputpalavras = $("#inputpalavras").val();
+        $("#linhaRetornoPalavraFrases").html("<li>Palavra: "+inputpalavras+"</li>");
+        if(inputpalavras != ""){
+            inputpalavras = inputpalavras.slice(1,2);
+            var returnadapizza = selecionapizza(inputpalavras);
+            $("#linhaRetornoPalavraFrases").append(returnadapizza);
+        }
+    });
+    $(document).on('click', '#brfrases', function(){
+        alert("Bora laa");
+    });
+}
 function mostraInputTextareaPlFr(){
     $(document).on('click', '#btmostraInputPl', function(){
         $(".btsinputPl").toggle();
@@ -90,28 +187,28 @@ function rodar(){
             switch(conta){
                 case 0:
                     $("#ponteiro").css("transform", "rotate(90deg)");                     
-                    conta++; sabor = "mussarela";              
+                    conta++; sabor = "mussarela";
                 break; case 1:
                     $("#ponteiro").css("transform", "rotate(135deg)");                      
-                    conta++; sabor = "brocolis";                    
+                    conta++; sabor = "brocolis";
                 break; case 2:
                     $("#ponteiro").css("transform", "rotate(180deg)");                      
-                    conta++; sabor = "mafiosa";                      
+                    conta++; sabor = "mafiosa";
                 break; case 3:
                     $("#ponteiro").css("transform", "rotate(225deg)");                      
-                    conta++; sabor = "basca";                    
+                    conta++; sabor = "basca";
                 break; case 4:
                     $("#ponteiro").css("transform", "rotate(270deg)");                      
-                    conta++; sabor = "escarola";                     
+                    conta++; sabor = "escarola";
                 break; case 5:
                     $("#ponteiro").css("transform", "rotate(315deg)");                      
-                    conta++; sabor = "alho_e_oleo";                    
+                    conta++; sabor = "alho_e_oleo";
                 break; case 6:
                     $("#ponteiro").css("transform", "rotate(360deg)");                      
-                    conta++; sabor = "margherita";                    
+                    conta++; sabor = "margherita";
                 break; case 7:
                     $("#ponteiro").css("transform", "rotate(400deg)");                     
-                    conta=0; sabor = "calabresa";  
+                    conta=0; sabor = "calabresa";
                 break;
             }          
         }, 80);  
@@ -132,10 +229,16 @@ function mostraopcoes(){
                                 "<button type='button' class='form-control  btn-lg btn-danger text-warning mt-3' id='btmostraInputPl'>##### PALAVRA #####</button>"+
                                 "<button type='button' class='form-control btn-lg btn-danger text-warning mt-1' id='btmostraTxFr'>## TEXTO OU FRASE ##</button>"+
                             "</li>"+
-                            "<li class='btsinputPl'><input type='text' class='form-control bg-warning border border-danger text-center mt-5' id=''/></li>"+
-                            "<li class='btsinputPl'><button type='button' class='form-control btn-lg btn-outline-danger'>PIZZA!</button></li>"+
-                            "<li class='btstextareaPl'><textarea class='form-control bg-warning border border-danger text-center mt-5' id=''></textarea></li>"+
-                            "<li class='btstextareaPl'><button type='button' class='form-control btn-lg btn-outline-danger'>PIZZA!</button></li>"+
+                            "<li class='btsinputPl'><input type='text' class='form-control bg-warning border border-danger text-center mt-5' id='inputpalavras'/></li>"+
+                            "<li class='btsinputPl'><button type='button' class='form-control btn-lg btn-outline-danger' id='btpalavras'>PIZZA!</button></li>"+
+                            "<li class='btstextareaPl'><textarea class='form-control bg-warning border border-danger text-center mt-5' id='textareafrases'></textarea></li>"+
+                            "<li class='btstextareaPl'><button type='button' class='form-control btn-lg btn-outline-danger' id='brfrases'>PIZZA!</button></li>"+
+                        "</ul>"+
+                    "</div>"+
+                "</div>"+
+                "<div class='row bg-warning'>"+
+                    "<div class='col-12 text-center'>"+
+                        "<ul class='m-0 p-0' id='linhaRetornoPalavraFrases'>"+
                         "</ul>"+
                     "</div>"+
                 "</div>"
@@ -174,7 +277,7 @@ function mostraopcoes(){
                 "</div>"
             ;
             $("#linhadeopcoes").html(opcaoRoleta);
-            cr=1;  
+            cr=1;
         }
     });
 }
