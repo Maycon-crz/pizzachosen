@@ -40,6 +40,7 @@ function validaInputTextareaPlFr(){
     $(document).on('click', '#btpalavras', function(){
         var inputpalavras = $("#inputpalavras").val();
         $("#linhaRetornoPalavraFrases").html("<li>Palavra: "+inputpalavras+"</li>");
+        inputpalavras = inputpalavras.toLowerCase();
         if(inputpalavras != ""){
             inputpalavras = inputpalavras.slice(0,1);
             var returnadapizza = selecionapizzapalavras(inputpalavras);
@@ -163,6 +164,9 @@ function rodar(){
 }
 var cr =0; var cr2=0;
 function mostraopcoes(){
+    $(document).on('click', '#btmostraemojis', function(){
+        alert("Emojis!");
+    });
     $(document).on('click', "#btmostrapalavrasfrases", function(){
         if(cr2 == 1){
             $("#linhadeopcoes").html("");
