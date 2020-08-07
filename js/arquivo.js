@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    emojis();
     validaInputTextareaPlFr();
     mostraInputTextareaPlFr();
     mostraPromocoaPizzarias();
@@ -6,6 +7,12 @@ $(document).ready(function(){
     rodar();
     mostraopcoes();
 });
+function emojis(){
+    $(document).on('click', '.imgemojis', function(){
+        var imgemojis = $(this).attr('id');
+        $("#linhapizzaemoji").html(selecionapizzapalavras(imgemojis));
+    });
+}
 function validaInputTextareaPlFr(){
     $(document).on('click', '#brfrases', function(){
         var textareafrases = $("#textareafrases").val();
@@ -162,11 +169,43 @@ function rodar(){
         }, 80);  
     }    
 }
-var cr =0; var cr2=0;
+var cr =0; var cr2=0; var cr3=0
 function mostraopcoes(){
-    $(document).on('click', '#btmostraemojis', function(){
-        alert("Emojis!");
-    });
+    $(document).on('click', '#btmostraemojis', function(){  
+        if(cr3 == 1){
+            $("#linhadeopcoes").html("");
+            cr3 = 0;
+        }else{      
+            $("#linhadeopcoes").html("<div class='row bg-danger'>"+
+                "<div class='col-12 mt-4'>"+
+                    "<ul class='m-0 p-0 text-center'>"+
+                        "<li class='text-center'>"+
+                            "<img src='img/emojis/comilona_symbols_n_emoticons.jpg' alt='' class='imgemojis' id='a'>"+
+                            "<img src='img/emojis/comendohamburguer_hdsmileys.gif' alt='' class='imgemojis' id='b'>"+
+                            "<img src='img/emojis/chorandoPinkFloyd_Wattpad.jpg' alt='' class='imgemojis' id='c'>"+
+                            "<img src='img/emojis/atrasado_YaelWeiss.jpg' alt='' class='imgemojis' id='d'>"+
+                            "<img src='img/emojis/apaixonadao_topbuzz.jpg' alt='' class='imgemojis' id='e'>"+
+                            "<img src='img/emojis/silencio_pt_depositphotos.jpg' alt='' class='imgemojis' id='f'>"+
+                        "</li>"+
+                        "<li>"+
+                            "<img src='img/emojis/olhosdepizza_nynke_weHeartIt.jpg' alt='' class='imgemojis mt-4' id='g'>"+
+                            "<img src='img/emojis/febre_symbols_n_emoticons.jpg' alt='' class='imgemojis mt-4' id='h'>"+
+                            "<img src='img/emojis/estudante_bancoDeImagens.jpg' alt='' class='imgemojis mt-4' id='i'>"+
+                            "<img src='img/emojis/comMascara_br_depositphotos.jpg' alt='' class='imgemojis mt-4' id='j'>"+
+                            "<img src='img/emojis/woozy_symbols_n_emoticons.jpg' alt='' class='imgemojis mt-4' id='k'>"+
+                            "<img src='img/emojis/viciadoemtelevisao_yaelWeiss.jpg' alt='' class='imgemojis mt-4' id='l'>"+
+                        "</li>"+
+                    "</ul>"+
+                "</div>"+
+            "</div>"+
+            "<div class='row bg-danger'>"+
+                "<div class='col-12 mt-4 mb-4'>"+
+                    "<ul class='m-0 p-0' id='linhapizzaemoji'></ul>"+
+                "</div>"+
+            "</div>");
+            cr3=1;
+        }
+    });        
     $(document).on('click', "#btmostrapalavrasfrases", function(){
         if(cr2 == 1){
             $("#linhadeopcoes").html("");

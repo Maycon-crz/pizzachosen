@@ -1,7 +1,15 @@
 ul{
     list-style: none;
 }
-
+.imgemojis{
+    width: 10% !important;
+    height: 100px !important;
+    border-radius: 10%;
+    opacity: 0.5;
+}
+.imgemojis:hover{
+    opacity: 1;
+}
 #mostrapizzarias, #pizzariasRoleta, .btsinputPl, .btstextareaPl{
     display: none;
 }

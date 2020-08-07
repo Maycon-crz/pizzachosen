@@ -13,7 +13,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'af': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'ag': return "<li>Pizza: margherita</li>";
         break; case 'ah': return "<li>Pizza: calabresa</li>";
-        break; case 'ai': return "<li>Pizza: calabresa</li>";
+        break; case 'ai': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'aj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'ak': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'al': return "<li>Pizza: saborosa</li>";
@@ -39,7 +39,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'bf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'bg': return "<li>Pizza: margherita</li>";
         break; case 'bh': return "<li>Pizza: calabresa</li>";
-        break; case 'bi': return "<li>Pizza: calabresa</li>";
+        break; case 'bi': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'bj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'bk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'bl': return "<li>Pizza: saborosa</li>";
@@ -65,7 +65,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'cf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'cg': return "<li>Pizza: margherita</li>";
         break; case 'ch': return "<li>Pizza: calabresa</li>";
-        break; case 'ci': return "<li>Pizza: calabresa</li>";
+        break; case 'ci': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'cj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'ck': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'cl': return "<li>Pizza: saborosa</li>";
@@ -91,7 +91,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'df': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'dg': return "<li>Pizza: margherita</li>";
         break; case 'dh': return "<li>Pizza: calabresa</li>";
-        break; case 'di': return "<li>Pizza: calabresa</li>";
+        break; case 'di': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'dj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'dk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'dl': return "<li>Pizza: saborosa</li>";
@@ -117,7 +117,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'ef': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'eg': return "<li>Pizza: margherita</li>";
         break; case 'eh': return "<li>Pizza: calabresa</li>";
-        break; case 'ei': return "<li>Pizza: calabresa</li>";
+        break; case 'ei': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'ej': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'ek': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'el': return "<li>Pizza: saborosa</li>";
@@ -143,7 +143,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'ff': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'fg': return "<li>Pizza: margherita</li>";
         break; case 'fh': return "<li>Pizza: calabresa</li>";
-        break; case 'fi': return "<li>Pizza: calabresa</li>";
+        break; case 'fi': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'fj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'fk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'fl': return "<li>Pizza: saborosa</li>";
@@ -169,7 +169,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'gf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'gg': return "<li>Pizza: margherita</li>";
         break; case 'gh': return "<li>Pizza: calabresa</li>";
-        break; case 'gi': return "<li>Pizza: calabresa</li>";
+        break; case 'gi': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'gj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'gk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'gl': return "<li>Pizza: saborosa</li>";
@@ -195,7 +195,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'hf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'hg': return "<li>Pizza: margherita</li>";
         break; case 'hh': return "<li>Pizza: calabresa</li>";
-        break; case 'hi': return "<li>Pizza: calabresa</li>";
+        break; case 'hi': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'hj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'hk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'hl': return "<li>Pizza: saborosa</li>";
@@ -221,7 +221,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'if': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'ig': return "<li>Pizza: margherita</li>";
         break; case 'ih': return "<li>Pizza: calabresa</li>";
-        break; case 'ii': return "<li>Pizza: calabresa</li>";
+        break; case 'ii': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'ij': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'ik': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'il': return "<li>Pizza: saborosa</li>";
@@ -247,7 +247,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'jf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'jg': return "<li>Pizza: margherita</li>";
         break; case 'jh': return "<li>Pizza: calabresa</li>";
-        break; case 'ji': return "<li>Pizza: calabresa</li>";
+        break; case 'ji': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'jj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'jk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'jl': return "<li>Pizza: saborosa</li>";
@@ -273,7 +273,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'kf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'kg': return "<li>Pizza: margherita</li>";
         break; case 'kh': return "<li>Pizza: calabresa</li>";
-        break; case 'ki': return "<li>Pizza: calabresa</li>";
+        break; case 'ki': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'kj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'kk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'kl': return "<li>Pizza: saborosa</li>";
@@ -299,7 +299,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'lf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'lg': return "<li>Pizza: margherita</li>";
         break; case 'lh': return "<li>Pizza: calabresa</li>";
-        break; case 'li': return "<li>Pizza: calabresa</li>";
+        break; case 'li': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'lj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'lk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'll': return "<li>Pizza: saborosa</li>";
@@ -325,7 +325,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'mf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'mg': return "<li>Pizza: margherita</li>";
         break; case 'mh': return "<li>Pizza: calabresa</li>";
-        break; case 'mi': return "<li>Pizza: calabresa</li>";
+        break; case 'mi': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'mj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'mk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'ml': return "<li>Pizza: saborosa</li>";
@@ -351,7 +351,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'nf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'ng': return "<li>Pizza: margherita</li>";
         break; case 'nh': return "<li>Pizza: calabresa</li>";
-        break; case 'ni': return "<li>Pizza: calabresa</li>";
+        break; case 'ni': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'nj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'nk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'nl': return "<li>Pizza: saborosa</li>";
@@ -377,7 +377,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'of': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'og': return "<li>Pizza: margherita</li>";
         break; case 'oh': return "<li>Pizza: calabresa</li>";
-        break; case 'oi': return "<li>Pizza: calabresa</li>";
+        break; case 'oi': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'oj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'ok': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'ol': return "<li>Pizza: saborosa</li>";
@@ -403,7 +403,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'pf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'pg': return "<li>Pizza: margherita</li>";
         break; case 'ph': return "<li>Pizza: calabresa</li>";
-        break; case 'pi': return "<li>Pizza: calabresa</li>";
+        break; case 'pi': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'pj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'pk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'pl': return "<li>Pizza: saborosa</li>";
@@ -429,7 +429,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'qf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'qg': return "<li>Pizza: margherita</li>";
         break; case 'qh': return "<li>Pizza: calabresa</li>";
-        break; case 'qi': return "<li>Pizza: calabresa</li>";
+        break; case 'qi': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'qj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'qk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'ql': return "<li>Pizza: saborosa</li>";
@@ -455,7 +455,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'rf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'rg': return "<li>Pizza: margherita</li>";
         break; case 'rh': return "<li>Pizza: calabresa</li>";
-        break; case 'ri': return "<li>Pizza: calabresa</li>";
+        break; case 'ri': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'rj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'rk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'rl': return "<li>Pizza: saborosa</li>";
@@ -481,7 +481,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'sf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'sg': return "<li>Pizza: margherita</li>";
         break; case 'sh': return "<li>Pizza: calabresa</li>";
-        break; case 'si': return "<li>Pizza: calabresa</li>";
+        break; case 'si': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'sj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'sk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'sl': return "<li>Pizza: saborosa</li>";
@@ -507,7 +507,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'tf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'tg': return "<li>Pizza: margherita</li>";
         break; case 'th': return "<li>Pizza: calabresa</li>";
-        break; case 'ti': return "<li>Pizza: calabresa</li>";
+        break; case 'ti': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'tj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'tk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'tl': return "<li>Pizza: saborosa</li>";
@@ -533,7 +533,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'uf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'ug': return "<li>Pizza: margherita</li>";
         break; case 'uh': return "<li>Pizza: calabresa</li>";
-        break; case 'ui': return "<li>Pizza: calabresa</li>";
+        break; case 'ui': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'uj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'uk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'ul': return "<li>Pizza: saborosa</li>";
@@ -559,7 +559,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'vf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'vg': return "<li>Pizza: margherita</li>";
         break; case 'vh': return "<li>Pizza: calabresa</li>";
-        break; case 'vi': return "<li>Pizza: calabresa</li>";
+        break; case 'vi': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'vj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'vk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'vl': return "<li>Pizza: saborosa</li>";
@@ -585,7 +585,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'wf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'wg': return "<li>Pizza: margherita</li>";
         break; case 'wh': return "<li>Pizza: calabresa</li>";
-        break; case 'wi': return "<li>Pizza: calabresa</li>";
+        break; case 'wi': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'wj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'wk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'wl': return "<li>Pizza: saborosa</li>";
@@ -611,7 +611,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'xf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'xg': return "<li>Pizza: margherita</li>";
         break; case 'xh': return "<li>Pizza: calabresa</li>";
-        break; case 'xi': return "<li>Pizza: calabresa</li>";
+        break; case 'xi': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'xj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'xk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'xl': return "<li>Pizza: saborosa</li>";
@@ -637,7 +637,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'yf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'yg': return "<li>Pizza: margherita</li>";
         break; case 'yh': return "<li>Pizza: calabresa</li>";
-        break; case 'yi': return "<li>Pizza: calabresa</li>";
+        break; case 'yi': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'yj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'yk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'yl': return "<li>Pizza: saborosa</li>";
@@ -663,7 +663,7 @@ function selecionapizzafrases(inputpalavras){
         break; case 'zf': return "<li>Pizza: alho_e_oleo</li>";
         break; case 'zg': return "<li>Pizza: margherita</li>";
         break; case 'zh': return "<li>Pizza: calabresa</li>";
-        break; case 'zi': return "<li>Pizza: calabresa</li>";
+        break; case 'zi': return "<li>Pizza: presunto_e_champignon</li>";
         break; case 'zj': return "<li>Pizza: milho_com_bacon</li>";
         break; case 'zk': return "<li>Pizza: cinco_queijos</li>";            
         break; case 'zl': return "<li>Pizza: saborosa</li>";
@@ -686,32 +686,32 @@ function selecionapizzafrases(inputpalavras){
 }
 function selecionapizzapalavras(inputpalavras){
     switch(inputpalavras){
-        case 'a':return "<li>Pizza: mussarela</li>";
-        break;case 'b':return "<li>Pizza: brocolis</li>";
-        break;case 'c':return "<li>Pizza: mafiosa</li>";
-        break;case 'd':return "<li>Pizza: basca</li>";
-        break;case 'e':return "<li>Pizza: escarola</li>";
-        break;case 'f':return "<li>Pizza: alho_e_oleo</li>";
-        break;case 'g':return "<li>Pizza: margherita</li>";
-        break;case 'h':return "<li>Pizza: calabresa</li>";
-        break;case 'i':return "<li>Pizza: calabresa</li>";
-        break;case 'j':return "<li>Pizza: milho_com_bacon</li>";
-        break;case 'k':return "<li>Pizza: cinco_queijos</li>";            
-        break;case 'l':return "<li>Pizza: saborosa</li>";
-        break;case 'm':return "<li>Pizza: napolitana</li>";
-        break;case 'n':return "<li>Pizza: anchovas</li>";
-        break;case 'o':return "<li>Pizza: portuguesa</li>";
-        break;case 'p':return "<li>Pizza: vegetariana</li>";
-        break;case 'q':return "<li>Pizza: lombo_com_catupiry</li>";
-        break;case 'r':return "<li>Pizza: bianca</li>";
-        break;case 's':return "<li>Pizza: moda_da_casa</li>";
-        break;case 't':return "<li>Pizza: siciliana</li>";
-        break;case 'u':return "<li>Pizza: pepperoni</li>";
-        break;case 'v':return "<li>Pizza: chester_com_catupiry</li>";
-        break;case 'w':return "<li>Pizza: tomates_secos_com_rucucula</li>";
-        break;case 'x':return "<li>Pizza: atum</li>";
-        break;case 'y':return "<li>Pizza: palmito</li>";
-        break;case 'z':return "<li>Pizza: frango_com_catupiry</li>";
+        case 'a':return "<li class='text-center'>Pizza: mussarela</li>";
+        break;case 'b':return "<li class='text-center'>Pizza: brocolis</li>";
+        break;case 'c':return "<li class='text-center'>Pizza: mafiosa</li>";
+        break;case 'd':return "<li class='text-center'>Pizza: basca</li>";
+        break;case 'e':return "<li class='text-center'>Pizza: escarola</li>";
+        break;case 'f':return "<li class='text-center'>Pizza: alho_e_oleo</li>";
+        break;case 'g':return "<li class='text-center'>Pizza: margherita</li>";
+        break;case 'h':return "<li class='text-center'>Pizza: calabresa</li>";
+        break;case 'i':return "<li class='text-center'>Pizza: presunto_e_champignon</li>";
+        break;case 'j':return "<li class='text-center'>Pizza: milho_com_bacon</li>";
+        break;case 'k':return "<li class='text-center'>Pizza: cinco_queijos</li>";            
+        break;case 'l':return "<li class='text-center'>Pizza: saborosa</li>";
+        break;case 'm':return "<li class='text-center'>Pizza: napolitana</li>";
+        break;case 'n':return "<li class='text-center'>Pizza: anchovas</li>";
+        break;case 'o':return "<li class='text-center'>Pizza: portuguesa</li>";
+        break;case 'p':return "<li class='text-center'>Pizza: vegetariana</li>";
+        break;case 'q':return "<li class='text-center'>Pizza: lombo_com_catupiry</li>";
+        break;case 'r':return "<li class='text-center'>Pizza: bianca</li>";
+        break;case 's':return "<li class='text-center'>Pizza: moda_da_casa</li>";
+        break;case 't':return "<li class='text-center'>Pizza: siciliana</li>";
+        break;case 'u':return "<li class='text-center'>Pizza: pepperoni</li>";
+        break;case 'v':return "<li class='text-center'>Pizza: chester_com_catupiry</li>";
+        break;case 'w':return "<li class='text-center'>Pizza: tomates_secos_com_rucucula</li>";
+        break;case 'x':return "<li class='text-center'>Pizza: atum</li>";
+        break;case 'y':return "<li class='text-center'>Pizza: palmito</li>";
+        break;case 'z':return "<li class='text-center'>Pizza: frango_com_catupiry</li>";
         break;
     }      
 }
