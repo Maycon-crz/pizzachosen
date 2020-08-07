@@ -1,4 +1,4 @@
-$(document).ready(function(){  
+$(document).ready(function(){
     validaInputTextareaPlFr();
     mostraInputTextareaPlFr();
     mostraPromocoaPizzarias();
@@ -6,100 +6,48 @@ $(document).ready(function(){
     rodar();
     mostraopcoes();
 });
-function selecionapizza(inputpalavras){
-    switch(inputpalavras){
-        case 'a':
-            return "<li>Pizza: mussarela</li>";
-        break;                
-        case 'b':
-            return "<li>Pizza: brocolis</li>";
-        break;
-        case 'c':
-            return "<li>Pizza: mafiosa</li>";
-        break;
-        case 'd':
-            return "<li>Pizza: basca</li>";
-        break;                       
-        case 'e':
-            return "<li>Pizza: escarola</li>";
-        break;
-        case 'f':
-            return "<li>Pizza: alho_e_oleo</li>";
-        break;
-        case 'g':
-            return "<li>Pizza: margherita</li>";
-        break;   
-        case 'h':
-            return "<li>Pizza: calabresa</li>";
-        break;
-        case 'i':
-            return "<li>Pizza: calabresa</li>";
-        break;
-        case 'j':
-            return "<li>Pizza: milho_com_bacon</li>";
-        break;
-        case 'k':
-            return "<li>Pizza: cinco_queijos</li>";            
-        break;
-        case 'l':
-            return "<li>Pizza: saborosa</li>";
-        break;
-        case 'm':
-            return "<li>Pizza: napolitana</li>";
-        break;
-        case 'n':
-            return "<li>Pizza: anchovas</li>";
-        break;
-        case 'o':
-            return "<li>Pizza: portuguesa</li>";
-        break;
-        case 'p':
-            return "<li>Pizza: vegetariana</li>";
-        break;
-        case 'q':
-            return "<li>Pizza: lombo_com_catupiry</li>";
-        break;
-        case 'r':
-            return "<li>Pizza: bianca</li>";
-        break;
-        case 's':
-            return "<li>Pizza: moda_da_casa</li>";
-        break;
-        case 't':
-            return "<li>Pizza: siciliana</li>";
-        break;
-        case 'u':
-            return "<li>Pizza: pepperoni</li>";
-        break;
-        case 'v':
-            return "<li>Pizza: chester_com_catupiry</li>";
-        case 'w':
-            return "<li>Pizza: tomates_secos_com_rucucula</li>";
-        break;
-        case 'x':
-            return "<li>Pizza: atum</li>";
-        break;
-        case 'y':
-            return "<li>Pizza: palmito</li>";
-        break;
-        case 'z':
-            return "<li>Pizza: frango_com_catupiry</li>";
-        break;
-    }      
-}
 function validaInputTextareaPlFr(){
+    $(document).on('click', '#brfrases', function(){
+        var textareafrases = $("#textareafrases").val();
+        textareafrases = textareafrases.toLowerCase();
+        if(textareafrases != ""){
+            var permitido="";
+            for (let c of textareafrases) {
+                if (isLetter(c)) {
+                    permitido = "sim";
+                } else if (isDigit(c)) {
+                    permitido = "nao";
+                } else {
+                    permitido = "nao";
+                }
+            }   
+            function isLetter(str) {
+                //Melhorar para pegar letras com ascentuação
+                return str.length === 1 && str.match(/[a-zA-Z]/i);
+            }
+            function isDigit(str) {
+                return str.length === 1 && str.match(/[0-9]/i);
+            }
+            if(permitido == "sim"){
+                $("#linhaRetornoPalavraFrases").html(selecionapizzafrases(textareafrases));
+            }else{
+                alert("Contêm números ou caracteres especiais digite apenas palavras!")
+            }
+        }else{
+            alert("Digite um texto ou frase!");
+        }                   
+    });
     $(document).on('click', '#btpalavras', function(){
         var inputpalavras = $("#inputpalavras").val();
         $("#linhaRetornoPalavraFrases").html("<li>Palavra: "+inputpalavras+"</li>");
         if(inputpalavras != ""){
             inputpalavras = inputpalavras.slice(0,1);
-            var returnadapizza = selecionapizza(inputpalavras);
+            var returnadapizza = selecionapizzapalavras(inputpalavras);
             $("#linhaRetornoPalavraFrases").append(returnadapizza);
+        }else{
+            alert("Digite uma palavra!")
         }
-    });
-    $(document).on('click', '#brfrases', function(){
-        alert("Bora laa");
-    });
+    });    
 }
 function mostraInputTextareaPlFr(){
     $(document).on('click', '#btmostraInputPl', function(){
@@ -223,16 +171,18 @@ function mostraopcoes(){
             $("#linhadeopcoes").html(
                 "<div class='row bg-warning'>"+
                     "<div class='col-12 text-center'>"+
-                        "<ul class='m-0 p-0'>"+
-                            "<li>"+
-                                "<button type='button' class='form-control  btn-lg btn-danger text-warning mt-3' id='btmostraInputPl'>##### PALAVRA #####</button>"+
-                                "<button type='button' class='form-control btn-lg btn-danger text-warning mt-1' id='btmostraTxFr'>## TEXTO OU FRASE ##</button>"+
-                            "</li>"+
-                            "<li class='btsinputPl'><input type='text' class='form-control bg-warning border border-danger text-center mt-5' id='inputpalavras'/></li>"+
-                            "<li class='btsinputPl'><button type='button' class='form-control btn-lg btn-outline-danger' id='btpalavras'>PIZZA!</button></li>"+
-                            "<li class='btstextareaPl'><textarea class='form-control bg-warning border border-danger text-center mt-5' id='textareafrases'></textarea></li>"+
-                            "<li class='btstextareaPl'><button type='button' class='form-control btn-lg btn-outline-danger' id='brfrases'>PIZZA!</button></li>"+
-                        "</ul>"+
+                    "<form action='' method=''>"+
+                            "<ul class='m-0 p-0'>"+
+                                "<li>"+
+                                    "<button type='button' class='form-control  btn-lg btn-danger text-warning mt-3' id='btmostraInputPl'>##### PALAVRA #####</button>"+
+                                    "<button type='button' class='form-control btn-lg btn-danger text-warning mt-1' id='btmostraTxFr'>## TEXTO OU FRASE ##</button>"+
+                                "</li>"+
+                                "<li class='btsinputPl'><input type='text' class='form-control bg-warning border border-danger text-center mt-5' id='inputpalavras'/></li>"+
+                                "<li class='btsinputPl'><button type='button' class='form-control btn-lg btn-outline-danger' id='btpalavras'>PIZZA!</button></li>"+
+                                "<li class='btstextareaPl'><textarea class='form-control bg-warning border border-danger text-center mt-5' id='textareafrases'></textarea></li>"+
+                                "<li class='btstextareaPl'><button type='button' class='form-control btn-lg btn-outline-danger' id='brfrases'>PIZZA!</button></li>"+
+                            "</ul>"+
+                        "</form>"+
                     "</div>"+
                 "</div>"+
                 "<div class='row bg-warning'>"+
