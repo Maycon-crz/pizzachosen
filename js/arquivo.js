@@ -10,6 +10,7 @@ $(document).ready(function(){
 function emojis(){
     $(document).on('click', '.imgemojis', function(){
         var imgemojis = $(this).attr('id');
+        // var srcEmoji = $(this)attr('src');   
         $("#linhapizzaemoji").html(selecionapizzapalavras(imgemojis));
     });
 }
@@ -214,18 +215,16 @@ function mostraopcoes(){
             $("#linhadeopcoes").html(
                 "<div class='row bg-warning'>"+
                     "<div class='col-12 text-center'>"+
-                    "<form action='' method=''>"+
-                            "<ul class='m-0 p-0'>"+
-                                "<li>"+
-                                    "<button type='button' class='form-control  btn-lg btn-danger text-warning mt-3' id='btmostraInputPl'>##### PALAVRA #####</button>"+
-                                    "<button type='button' class='form-control btn-lg btn-danger text-warning mt-1' id='btmostraTxFr'>## TEXTO OU FRASE ##</button>"+
-                                "</li>"+
-                                "<li class='btsinputPl'><input type='text' class='form-control bg-warning border border-danger text-center mt-5' id='inputpalavras'/></li>"+
-                                "<li class='btsinputPl'><button type='button' class='form-control btn-lg btn-outline-danger' id='btpalavras'>PIZZA!</button></li>"+
-                                "<li class='btstextareaPl'><textarea class='form-control bg-warning border border-danger text-center mt-5' id='textareafrases'></textarea></li>"+
-                                "<li class='btstextareaPl'><button type='button' class='form-control btn-lg btn-outline-danger' id='brfrases'>PIZZA!</button></li>"+
-                            "</ul>"+
-                        "</form>"+
+                        "<ul class='m-0 p-0'>"+
+                            "<li>"+
+                                "<button type='button' class='form-control  btn-lg btn-danger text-warning mt-3' id='btmostraInputPl'>##### PALAVRA #####</button>"+
+                                "<button type='button' class='form-control btn-lg btn-danger text-warning mt-1' id='btmostraTxFr'>## TEXTO OU FRASE ##</button>"+
+                            "</li>"+
+                            "<li class='btsinputPl'><input type='text' class='form-control bg-warning border border-danger text-center mt-5' id='inputpalavras'/></li>"+
+                            "<li class='btsinputPl'><button type='button' class='form-control btn-lg btn-outline-danger' id='btpalavras'>PIZZA!</button></li>"+
+                            "<li class='btstextareaPl'><textarea class='form-control bg-warning border border-danger text-center mt-5' id='textareafrases'></textarea></li>"+
+                            "<li class='btstextareaPl'><button type='button' class='form-control btn-lg btn-outline-danger' id='brfrases'>PIZZA!</button></li>"+
+                        "</ul>"+
                     "</div>"+
                 "</div>"+
                 "<div class='row bg-warning'>"+
