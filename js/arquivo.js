@@ -6,6 +6,7 @@ $(document).ready(function(){
     roleta();
     rodar();
     mostraopcoes();
+    auto();
 });
 function emojis(){
     $(document).on('click', '.imgemojis', function(){
@@ -174,7 +175,7 @@ var cr =0; var cr2=0; var cr3=0
 function mostraopcoes(){
     $(document).on('click', '#btmostraemojis', function(){  
         if(cr3 == 1){
-            $("#linhadeopcoes").html("");
+            auto();
             cr3 = 0;
         }else{      
             $("#linhadeopcoes").html("<div class='row bg-danger'>"+
@@ -209,7 +210,7 @@ function mostraopcoes(){
     });        
     $(document).on('click', "#btmostrapalavrasfrases", function(){
         if(cr2 == 1){
-            $("#linhadeopcoes").html("");
+            auto();
             cr2 = 0;
         }else{
             $("#linhadeopcoes").html(
@@ -239,7 +240,7 @@ function mostraopcoes(){
     });
     $(document).on('click', "#btmostraroleta", function(){
         if(cr == 1){
-            $("#linhadeopcoes").html("");
+            auto();
             cr = 0;
         }else{
             var opcaoRoleta =
@@ -271,4 +272,19 @@ function mostraopcoes(){
             cr=1;
         }
     });
+}
+function auto(){
+    $("#linhadeopcoes").html(
+        "<div class='row mt-5 mb-5'>"+
+            "<div class='col-12 text-center'>"+
+                "<ul class='mt-5 mb-5 p-0'>"+
+                    "<li>"+
+                        "<img src='img/pizzaAleatoria.jpg' alt='' id='imgPizzaAleatoria'/>"+
+                        "<button class='btn btn-danger'><h3 class='text-center'>Pizza Aleatória</h3></button>"+
+                    "</li>"+
+                    "<li id='mostraAleatoria'></li>"+
+               " </ul>"+
+            "</div>"+
+        "</div>"
+    );
 }

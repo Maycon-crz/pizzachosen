@@ -1,3 +1,6 @@
+html{
+    overflow-x: hidden;
+}
 ul{
     list-style: none;
 }
@@ -17,14 +20,13 @@ ul{
     width: 50% !important;
     height: 10% !important;
 }
-.imgpizza{
+.imgpizza, #roleta{
     width: 80%;
     height: 80%;
 }
-#roleta{
-    /* transform: rotate(50grad); */
-    width: 80%;
-    height: 80%;
+#imgPizzaAleatoria{
+    width: 30%;
+    height: 30%;
 }
 .btsescolha{
     width:100%;
