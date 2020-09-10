@@ -8,6 +8,9 @@ $(document).ready(function(){
     mostraopcoes();
     auto();
 });
+function opPizzaAleatoria(){
+  $(document).on('');
+}
 function emojis(){
     $(document).on('click', '.imgemojis', function(){
         var imgemojis = $(this).attr('id');
@@ -280,7 +283,7 @@ function auto(){
                 "<ul class='mt-5 mb-5 p-0'>"+
                     "<li>"+
                         "<img src='img/pizzaAleatoria.jpg' alt='' id='imgPizzaAleatoria'/>"+
-                        "<button class='btn btn-danger'><h3 class='text-center'>Pizza Aleatória</h3></button>"+
+                        "<button class='btn btn-danger' id='btPizzaAleatoria'><h3 class='text-center'>Pizza Aleatória</h3></button>"+
                     "</li>"+
                     "<li id='mostraAleatoria'></li>"+
                " </ul>"+
