@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    opPizzaAleatoria();
     emojis();
     validaInputTextareaPlFr();
     mostraInputTextareaPlFr();
@@ -9,7 +10,12 @@ $(document).ready(function(){
     auto();
 });
 function opPizzaAleatoria(){
-  $(document).on('');
+  $(document).on('click', '#btPizzaAleatoria', function(){
+    var alfabeto = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    alfabeto.sort(function(a, b){return 0.5 - Math.random()});
+    var ultimaL = alfabeto.pop();  
+    $("#mostraAleatoria").html(selecionapizzapalavras(ultimaL));
+  });
 }
 function emojis(){
     $(document).on('click', '.imgemojis', function(){
@@ -285,7 +291,7 @@ function auto(){
                         "<img src='img/pizzaAleatoria.jpg' alt='' id='imgPizzaAleatoria'/>"+
                         "<button class='btn btn-danger' id='btPizzaAleatoria'><h3 class='text-center'>Pizza Aleatória</h3></button>"+
                     "</li>"+
-                    "<li id='mostraAleatoria'></li>"+
+                    "<li class='text-center' id='mostraAleatoria'></li>"+
                " </ul>"+
             "</div>"+
         "</div>"
