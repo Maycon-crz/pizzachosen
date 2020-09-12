@@ -1362,57 +1362,57 @@ function selecionapizzafrases(inputpalavras){
 }
 function selecionapizzapalavras(inputpalavras){
     switch(inputpalavras){
-        case 'a':return ("<li class='text-center'>Pizza: mussarela</li>"+
+        case 'a':return ("<li class='text-center'><h3>Pizza: mussarela</h1></li>"+
         "<li class='text-center'><img src='img/mussarela.png' class='imgpizza'/></li>");
-        break;case 'b':return ("<li class='text-center'>Pizza: brocolis</li>"+
+        break;case 'b':return ("<li class='text-center'><h3>Pizza: brocolis</h1></li>"+
         "<li class='text-center'><img src='img/brocolis.png' class='imgpizza'/></li>");
-        break;case 'c':return ("<li class='text-center'>Pizza: mafiosa</li>"+
+        break;case 'c':return ("<li class='text-center'><h3>Pizza: mafiosa</h1></li>"+
         "<li class='text-center'><img src='img/mafiosa.png' class='imgpizza'/></li>");
-        break;case 'd':return ("<li class='text-center'>Pizza: basca</li>"+
+        break;case 'd':return ("<li class='text-center'><h3>Pizza: basca</h1></li>"+
         "<li class='text-center'><img src='img/basca.png' class='imgpizza'/></li>");
-        break;case 'e':return ("<li class='text-center'>Pizza: escarola</li>"+
+        break;case 'e':return ("<li class='text-center'><h3>Pizza: escarola</h1></li>"+
         "<li class='text-center'><img src='img/escarola.png' class='imgpizza'/></li>");
-        break;case 'f':return ("<li class='text-center'>Pizza: alho_e_oleo</li>"+
+        break;case 'f':return ("<li class='text-center'><h3>Pizza: alho_e_oleo</h1></li>"+
         "<li class='text-center'><img src='img/alho_e_oleo.png' class='imgpizza'/></li>");
-        break;case 'g':return ("<li class='text-center'>Pizza: margherita</li>"+
+        break;case 'g':return ("<li class='text-center'><h3>Pizza: margherita</h1></li>"+
         "<li class='text-center'><img src='img/margherita.png' class='imgpizza'/></li>");
-        break;case 'h':return ("<li class='text-center'>Pizza: calabresa</li>"+
+        break;case 'h':return ("<li class='text-center'><h3>Pizza: calabresa</h1></li>"+
         "<li class='text-center'><img src='img/calabresa.png' class='imgpizza'/></li>");
-        break;case 'i':return ("<li class='text-center'>Pizza: presunto_e_champignon</li>"+
+        break;case 'i':return ("<li class='text-center'><h3>Pizza: presunto_e_champignon</h1></li>"+
         "<li class='text-center'><img src='img/presunto_e_champignon.png' class='imgpizza'/></li>");
-        break;case 'j':return ("<li class='text-center'>Pizza: milho_com_bacon</li>"+
+        break;case 'j':return ("<li class='text-center'><h3>Pizza: milho_com_bacon</h1></li>"+
         "<li class='text-center'><img src='img/milho_com_bacon.png' class='imgpizza'/></li>");
-        break;case 'k':return ("<li class='text-center'>Pizza: cinco_queijos</li>"+
+        break;case 'k':return ("<li class='text-center'><h3>Pizza: cinco_queijos</h1></li>"+
         "<li class='text-center'><img src='img/cinco_queijos.png' class='imgpizza'/></li>");
-        break;case 'l':return ("<li class='text-center'>Pizza: saborosa</li>"+
+        break;case 'l':return ("<li class='text-center'><h3>Pizza: saborosa</h1></li>"+
         "<li class='text-center'><img src='img/saborosa.png' class='imgpizza'/></li>");
-        break;case 'm':return ("<li class='text-center'>Pizza: napolitana</li>"+
+        break;case 'm':return ("<li class='text-center'><h3>Pizza: napolitana</h1></li>"+
         "<li class='text-center'><img src='img/napolitana.png' class='imgpizza'/></li>");
-        break;case 'n':return ("<li class='text-center'>Pizza: anchovas</li>"+
+        break;case 'n':return ("<li class='text-center'><h3>Pizza: anchovas</h1></li>"+
         "<li class='text-center'><img src='img/anchovas.png' class='imgpizza'/></li>");
-        break;case 'o':return ("<li class='text-center'>Pizza: portuguesa</li>"+
+        break;case 'o':return ("<li class='text-center'><h3>Pizza: portuguesa</h1></li>"+
         "<li class='text-center'><img src='img/portuguesa.png' class='imgpizza'/></li>");
-        break;case 'p':return ("<li class='text-center'>Pizza: vegetariana</li>"+
+        break;case 'p':return ("<li class='text-center'><h3>Pizza: vegetariana</h1></li>"+
         "<li class='text-center'><img src='img/vegetariana.png' class='imgpizza'/></li>");
-        break;case 'q':return ("<li class='text-center'>Pizza: lombo_com_catupiry</li>"+
+        break;case 'q':return ("<li class='text-center'><h3>Pizza: lombo_com_catupiry</h1></li>"+
         "<li class='text-center'><img src='img/lombo_com_catupiry.png' class='imgpizza'/></li>");
-        break;case 'r':return ("<li class='text-center'>Pizza: bianca</li>"+
+        break;case 'r':return ("<li class='text-center'><h3>Pizza: bianca</h1></li>"+
         "<li class='text-center'><img src='img/bianca.png' class='imgpizza'/></li>");
-        break;case 's':return ("<li class='text-center'>Pizza: moda_da_casa</li>"+
+        break;case 's':return ("<li class='text-center'><h3>Pizza: moda_da_casa</h1></li>"+
         "<li class='text-center'><img src='img/moda_da_casa.png' class='imgpizza'/></li>");
-        break;case 't':return ("<li class='text-center'>Pizza: siciliana</li>"+
+        break;case 't':return ("<li class='text-center'><h3>Pizza: siciliana</h1></li>"+
         "<li class='text-center'><img src='img/siciliana.png' class='imgpizza'/></li>");
-        break;case 'u':return ("<li class='text-center'>Pizza: pepperoni</li>"+
+        break;case 'u':return ("<li class='text-center'><h3>Pizza: pepperoni</h1></li>"+
         "<li class='text-center'><img src='img/pepperoni.png' class='imgpizza'/></li>");
-        break;case 'v':return ("<li class='text-center'>Pizza: chester_com_catupiry</li>"+
+        break;case 'v':return ("<li class='text-center'><h3>Pizza: chester_com_catupiry</h1></li>"+
         "<li class='text-center'><img src='img/chester_com_catupiry.png' class='imgpizza'/></li>");
-        break;case 'w':return ("<li class='text-center'>Pizza: tomates_secos_com_rucucula</li>"+
+        break;case 'w':return ("<li class='text-center'><h3>Pizza: tomates_secos_com_rucucula</h1></li>"+
         "<li class='text-center'><img src='img/tomates_secos_com_rucucula.png' class='imgpizza'/></li>");
-        break;case 'x':return ("<li class='text-center'>Pizza: atum</li>"+
+        break;case 'x':return ("<li class='text-center'><h3>Pizza: atum</h1></li>"+
         "<li class='text-center'><img src='img/atum.png' class='imgpizza'/></li>");
-        break;case 'y':return ("<li class='text-center'>Pizza: palmito</li>"+
+        break;case 'y':return ("<li class='text-center'><h3>Pizza: palmito</h1></li>"+
         "<li class='text-center'><img src='img/palmito.png' class='imgpizza'/></li>");
-        break;case 'z':return ("<li class='text-center'>Pizza: frango_com_catupiry</li>"+
+        break;case 'z':return ("<li class='text-center'><h3>Pizza: frango_com_catupiry</h1></li>"+
         "<li class='text-center'><img src='img/frango_com_catupiry.png' class='imgpizza'/></li>");
         break;
     }      
