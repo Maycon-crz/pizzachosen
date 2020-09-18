@@ -4,6 +4,7 @@
 ![Tela inicial](https://github.com/Maycon-crz/pizzachosen/blob/master/teladoprojeto.PNG)
 
 Lista de Tarefas:
-- [] Criar Opção Palavras e frases
-- [] Criar Opção Emojis
-- [] Criar Rodapé
+- [v] Criar Opção Palavras e frases
+- [v] Criar Opção Emojis
+- [] Criar Rodapé Melhor
+- [] Criar opções de pizzarias por geolocalização
